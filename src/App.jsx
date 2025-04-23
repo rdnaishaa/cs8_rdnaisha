@@ -227,15 +227,15 @@ export default function ZoomLandingPage() {
 
   return (
     <div className="min-h-screen font-sans text-gray-800 overflow-x-hidden">
-      {/* Header with sticky positioning */}
-      <header className="sticky top-0 z-50 bg-blue-600 text-white shadow-lg">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <Video className="h-8 w-8" />
-            <span className="text-2xl font-bold">Zoom</span>
-          </div>
-          
-          {/* Desktop Navigation */}
+        {/* Header with fixed positioning */}
+          <header className="fixed top-0 left-0 right-0 z-50 bg-blue-600 text-white shadow-lg">
+            <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+              <div className="flex items-center space-x-2">
+                <Video className="h-8 w-8" />
+                <span className="text-2xl font-bold">Zoom</span>
+              </div>
+  
+        {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection(fiturRef, 'fitur')}
@@ -875,7 +875,7 @@ export default function ZoomLandingPage() {
           
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Zoom Video Communications, Inc. All rights reserved.
+              &copy; {new Date().getFullYear()} by R. Aisha Syauqi Ramadhani (2306250554)
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white transition">
